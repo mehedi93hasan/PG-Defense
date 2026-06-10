@@ -1,0 +1,46 @@
+# PG-Def configuration.
+#
+# Point `features_csv` at the 30-feature + label CSV produced by
+# scripts/01_extract_features.py for each dataset. `attack_class_col` (optional)
+# is the original multi-class attack label column used for the per-class table
+# (Table III); leave null if only binary labels are available.
+
+seed: 42
+results_dir: results
+
+datasets:
+  CICIDS2017:
+    features_csv: data/cicids2017_pgdef.csv
+    attack_class_col: attack_category
+    classes:
+      - DDoS/DoS
+      - Port Scan/Recon.
+      - Brute Force/Expl.
+      - Botnet/Backdoor
+      - Web Atk/Injection
+      - Infiltration/Exf.
+  UNSW-NB15:
+    features_csv: data/unsw_nb15_pgdef.csv
+    attack_class_col: attack_category
+    classes:
+      - DDoS/DoS
+      - Port Scan/Recon.
+      - Brute Force/Expl.
+      - Botnet/Backdoor
+      - Web Atk/Injection
+      - Infiltration/Exf.
+  Edge-IIoTset:
+    features_csv: data/edge_iiotset_pgdef.csv
+    attack_class_col: attack_category
+    classes: []
+
+# Edge-device budget B (Section III), used for compliance reporting.
+budget:
+  memory_mb: 100
+  latency_ms: 100
+  power_w: 2
+
+evaluation:
+  test_size: 0.20
+  smote_k: 5
+  cv_folds: 5
