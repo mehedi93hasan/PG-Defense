@@ -12,11 +12,11 @@ spoofing), supported by a formal evasion-cost bound, in an edge-deployable footp
 > networks alike collapse on the manipulable features and survive on the protected ones.
 
 ## Architecture
-```
+
 <img width="2752" height="1265" alt="fig_2" src="https://github.com/user-attachments/assets/c8626fd5-8699-424a-84dc-a4d7357bc26d" />
 
 
-```
+
 
 
 
