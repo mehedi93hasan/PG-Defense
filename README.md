@@ -11,6 +11,15 @@ spoofing), supported by a formal evasion-cost bound, in an edge-deployable footp
 > detector is allowed to trust*, not of the model architecture — tree ensembles and deep
 > networks alike collapse on the manipulable features and survive on the protected ones.
 
+## Architecture
+```
+<img width="2752" height="1265" alt="fig_2" src="https://github.com/user-attachments/assets/c8626fd5-8699-424a-84dc-a4d7357bc26d" />
+
+
+```
+
+
+
 ## Repository structure
 
 ```
@@ -55,27 +64,7 @@ One command:
 bash scripts/reproduce_all.sh cicids_pgdef.csv unsw_pgdef.csv edge_pgdef.csv
 ```
 
-Or table by table:
 
-| Paper artifact | Script |
-|---|---|
-| Table II — dataset statistics | `experiments/run_dataset_stats.py` |
-| Table III/IV — main detection + 5-fold CV | `experiments/run_main_detection.py` |
-| Table V/VI — lightweight edge model | `experiments/run_lightweight.py` |
-| Table VII — adaptive control + drift (PSI) | `experiments/run_adaptive.py` |
-| Table VIII — multi-attack evasion | `experiments/run_evasion.py` |
-| Table IX — defense baselines (under PGD) | `experiments/run_defense_baselines.py` |
-| Table X — deep-learning baselines | `experiments/run_dl_baselines.py` |
-| Fig 2 — AUC vs model size | `figures/make_pareto.py` |
-| Fig 3 — PSI drift | `figures/make_psi.py` |
-| Fig 1 — feature importance | `figures/make_importance.py --csv <csv>` |
-| Fig 4 — ROC under attack | `figures/make_roc_attack.py --csv <csv>` |
-| Fig 5 — baseline collapse | `figures/make_baseline_collapse.py` |
-| Fig 6 — cross-domain transfer | `experiments/run_cross_domain.py` + `figures/make_crossdomain.py` |
-| Fig 7 — per-attack detection | `experiments/run_per_attack.py` + `figures/make_perattack.py` |
-
-Each experiment prints a summary and writes `results/<name>.json`; figure scripts read those
-JSON files and emit vector PDFs to `figures/out/`.
 
 ## Method (one paragraph)
 
