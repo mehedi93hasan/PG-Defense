@@ -1,3 +1,4 @@
+<img width="6000" height="3133" alt="fig_1 (1)" src="https://github.com/user-attachments/assets/45be2316-86c1-4d21-88c0-4a96f3210860" />
 # PG-Def: Manipulation-Cost-Grounded Features for Adversarially Robust and Lightweight Network Intrusion Detection
 
 Reference implementation for the PG-Def paper. PG-Def reframes NIDS robustness as a
@@ -12,6 +13,9 @@ spoofing), supported by a formal evasion-cost bound, in an edge-deployable footp
 > networks alike collapse on the manipulable features and survive on the protected ones.
 
 ## Architecture
+
+
+<img width="6000" height="3133" alt="fig_1 (1)" src="https://github.com/user-attachments/assets/bc1ed4c0-a048-4d53-92be-6e69eb5d753c" />
 
 <img width="2752" height="1265" alt="fig_2" src="https://github.com/user-attachments/assets/c8626fd5-8699-424a-84dc-a4d7357bc26d" />
 
