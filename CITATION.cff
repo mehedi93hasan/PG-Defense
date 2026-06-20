@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "PG-Def: Manipulation-Cost-Grounded Features for Adversarially Robust and Lightweight Network Intrusion Detection"
+authors:
+  - family-names: Hasan
+    given-names: Mehedi
+repository-code: "https://github.com/mehedi93hasan/PG-Defense"
+license: MIT
+version: "1.0.0"
